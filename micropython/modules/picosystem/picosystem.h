@@ -72,6 +72,7 @@ extern mp_obj_t picosystem_target(mp_uint_t n_args, const mp_obj_t *args);
 extern mp_obj_t picosystem_camera(mp_uint_t n_args, const mp_obj_t *args);
 extern mp_obj_t picosystem_cursor(mp_uint_t n_args, const mp_obj_t *args);
 extern mp_obj_t picosystem_spritesheet(mp_uint_t n_args, const mp_obj_t *args);
+extern mp_obj_t picosystem_font(mp_uint_t n_args, const mp_obj_t *args);
 
 // primitives.cpp
 extern mp_obj_t picosystem_pixel(mp_obj_t x_obj, mp_obj_t y_obj);

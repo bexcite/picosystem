@@ -89,6 +89,7 @@ MP_DEFINE_CONST_FUN_OBJ_VAR_BETWEEN(picosystem_target_obj, 0, 1, picosystem_targ
 MP_DEFINE_CONST_FUN_OBJ_VAR_BETWEEN(picosystem_camera_obj, 0, 2, picosystem_camera);
 MP_DEFINE_CONST_FUN_OBJ_VAR_BETWEEN(picosystem_cursor_obj, 0, 2, picosystem_cursor);
 MP_DEFINE_CONST_FUN_OBJ_VAR_BETWEEN(picosystem_spritesheet_obj, 0, 1, picosystem_spritesheet);
+MP_DEFINE_CONST_FUN_OBJ_VAR_BETWEEN(picosystem_font_obj, 1, 3, picosystem_font);
 // TODO font?
 
 // primitives.cpp

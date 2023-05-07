@@ -209,4 +209,22 @@ mp_obj_t picosystem_spritesheet(mp_uint_t n_args, const mp_obj_t *args)  {
     return mp_const_none;
 }
 
+mp_obj_t picosystem_font(mp_uint_t n_args, const mp_obj_t *args) {
+    int w = mp_obj_get_int(args[0]);
+    if (n_args == 3) {
+        int h = mp_obj_get_int(args[1]);
+        int s = mp_obj_get_int(args[2]);
+        font(w, h, s);
+    } else if (n_args == 2) {
+        int h = mp_obj_get_int(args[1]);
+        font(w, h);
+    } else if (n_args == 1) {
+        font(w);
+    } else {
+        mp_raise_TypeError("font() takes from 1 to 3 args positional arguments "
+                           "(w, [h], [s]).");
+    }
+    return mp_const_none;
+}
+
 }
