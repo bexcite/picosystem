@@ -208,6 +208,6 @@ cp ../../../picosystem/micropython/examples/picosystem/launcher.py modules/
 Build:
 
 ```
-make USER_C_MODULES=../../../picosystem/micropython/modules/micropython.cmake BOARD=PIMORONI_PICOSYSTEM
+make CFLAGS="-Wno-array-bounds" USER_C_MODULES=../../../picosystem/micropython/modules/micropython.cmake BOARD=PIMORONI_PICOSYSTEM
 cp build-PIMORONI_PICOSYSTEM/firmware.uf2 /path/to/RPI-RP2/
 ```
